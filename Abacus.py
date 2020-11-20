@@ -41,11 +41,10 @@
 
 def print_abacus(value):
        #
-       ### Add you code here 
-       #
+       ### Add you code here
        for i in '0'*(10-len(str(value)))+str(value):
             print('|00000*****|'[:-1-int(i)]+'   '+'|00000*****|'[-1-int(i):])
-
+       #
 ###  TEST CASES
 print("Abacus showing 0:")
 print_abacus(0)
